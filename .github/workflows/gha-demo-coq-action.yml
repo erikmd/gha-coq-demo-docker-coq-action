@@ -24,3 +24,6 @@ jobs:
         with:
           opam_file: 'coq-demo.opam'
           custom_image: ${{ matrix.image }}
+          export: 'OPAMWITHTEST'  # space-separated list of variables
+        env:
+          OPAMWITHTEST: 'true'
