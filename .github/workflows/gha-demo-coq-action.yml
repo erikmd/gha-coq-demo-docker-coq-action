@@ -15,8 +15,8 @@ jobs:
     strategy:
       matrix:
         image:
-          - 'coqorg/coq:8.20-alpha'
           - 'coqorg/coq:8.19'
+          - 'mathcomp/mathcomp:latest-coq-8.19'
       fail-fast: false
     steps:
       - uses: actions/checkout@v4
